@@ -31,7 +31,10 @@ public class SeleniumBrowserSetup  {
 		
 		BasicBrowserOperations.basic_browser_operations();
 		
-		URLOperations.url_operations();
+		//URLOperations.url_operations();
+		
+		URLOperations.gmailcheckC();
+
 		
 		
 	}
@@ -50,8 +53,12 @@ public class SeleniumBrowserSetup  {
 		
 BasicBrowserOperations.basic_browser_operations();
 		
-		URLOperations.url_operations();
+	//	URLOperations.url_operations();
+		
+		URLOperations.gmailcheckC();
+
 	}
+	
 	
 
 
@@ -69,7 +76,10 @@ public static void iebrowser_setup() throws InterruptedException
 		
 		BasicBrowserOperations.basic_browser_operations();
 		
-		URLOperations.url_operations();
+		//URLOperations.url_operations();
+		
+		URLOperations.gmailcheckC();
+
 		
 		
 	}
@@ -98,8 +108,11 @@ public static void edgebrowser_setup() throws InterruptedException
 	
 	BasicBrowserOperations.basic_browser_operations();
 	
-	URLOperations.url_operations();
+	//URLOperations.url_operations();
 	
+	
+	URLOperations.gmailcheckC();
+
 }
 
 	

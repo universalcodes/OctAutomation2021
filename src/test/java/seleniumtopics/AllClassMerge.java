@@ -6,6 +6,7 @@ public class AllClassMerge {
 	public static void main(String[] args) throws InterruptedException {
 		
 		SeleniumBrowserSetup.googlechromesetup();
+		
 		SeleniumBrowserSetup.browsersetup.quit();
 		
 		
@@ -13,8 +14,10 @@ public class AllClassMerge {
 		SeleniumBrowserSetup.browsersetup.quit();
 
 		
-		 SeleniumBrowserSetup.iebrowser_setup();
-		 SeleniumBrowserSetup.browsersetup.quit(); 
+		/*
+		 * SeleniumBrowserSetup.iebrowser_setup();
+		 * SeleniumBrowserSetup.browsersetup.quit();
+		 */
 		 
 
 
