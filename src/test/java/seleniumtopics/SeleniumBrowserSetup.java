@@ -33,13 +33,14 @@ public class SeleniumBrowserSetup  {
 		
 		//URLOperations.url_operations();
 		
-		URLOperations.gmailcheckC();
+	//	URLOperations.gmailcheckC();
 
+		//LocatorsMain.all_locators_name();
 		
+		LocatorsMain.all_locators_xpathcontains();
 		
+	
 	}
-	
-	
 	public static void firefoxsetup() throws InterruptedException
 	
 	{
@@ -55,7 +56,10 @@ BasicBrowserOperations.basic_browser_operations();
 		
 	//	URLOperations.url_operations();
 		
-		URLOperations.gmailcheckC();
+		//URLOperations.gmailcheckC();
+
+LocatorsMain.all_locators_name();
+
 
 	}
 	
@@ -78,7 +82,9 @@ public static void iebrowser_setup() throws InterruptedException
 		
 		//URLOperations.url_operations();
 		
-		URLOperations.gmailcheckC();
+	//	URLOperations.gmailcheckC();
+		
+		LocatorsMain.all_locators_name();
 
 		
 		
@@ -111,7 +117,10 @@ public static void edgebrowser_setup() throws InterruptedException
 	//URLOperations.url_operations();
 	
 	
-	URLOperations.gmailcheckC();
+//	URLOperations.gmailcheckC();
+	
+	LocatorsMain.all_locators_name();
+
 
 }
 

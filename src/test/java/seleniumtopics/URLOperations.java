@@ -46,9 +46,12 @@ public class URLOperations extends SeleniumBrowserSetup {
 		
 		browsersetup.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-	
+	}
+		
+		
+		
 	}
 	
 	
 
-}
+
