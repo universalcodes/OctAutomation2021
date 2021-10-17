@@ -50,77 +50,73 @@ public class LocatorsMain extends SeleniumBrowserSetup {
 	}
 
 	public static void all_locators_xpathcontains() throws InterruptedException {
+	
+		 browsersetup.get("	https://qainfotech.com");
+		  browsersetup.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS); //
+/*		 Xpath with Contains*/
+		 
+		 
+		  //or use text
+		 
+		 Thread.sleep(20000);
+		 
+		 //(//span[contains(text(),'Read More')])[5]
+		 WebElement readmore_click1 =browsersetup.findElement(By.xpath("//span[contains(text(),'Read More')]"));
+		 readmore_click1.click();
+		 
+		 
 		/*
-		 * browsersetup.get("	https://qainfotech.com");
-		 * browsersetup.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS); //
-		 * Xpath with Contains
+		 * String amazonURL =
+		 * "https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&";
+		 * 
+		 * browsersetup.get(amazonURL);
+		 * 
+		 * browsersetup.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		 * 
 		 * 
-		 * //or use text
 		 * 
-		 * Thread.sleep(20000);
-		 * 
-		 * 
-		 * WebElement readmore_click1 =
-		 * browsersetup.findElement(By.xpath("//span[contains(text(),'Read More')]"));
-		 * readmore_click1.click();
-		 * 
-		 */
-
-		
-		
-		String amazonURL = "https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&";
-
-		browsersetup.get(amazonURL);
-
-		browsersetup.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		
-		
-		/*
 		 * WebElement xpath_email =
 		 * browsersetup.findElement(By.xpath("//input[@id = 'ap_email']"));
 		 * xpath_email.sendKeys("yogeshkamra25@gmail.com");
-		 */
-
-		/*
+		 * 
+		 * 
+		 * 
 		 * WebElement button_xpath =
 		 * browsersetup.findElement(By.xpath("//input[contains, (text(), 'Continue')]"))
-		 * ; button_xpath.click();	
-		 */
-		
-		/*
+		 * ; button_xpath.click();
+		 * 
+		 * 
+		 * 
 		 * WebElement create_account =
 		 * browsersetup.findElement(By.xpath("//a[contains, (text(), 'Create')]"));
 		 * create_account.click();
-		 */
-		
-		/*
+		 * 
+		 * 
+		 * 
 		 * WebElement help_click = browsersetup.findElement(By.cssSelector(".San"));
 		 * help_click.click();
+		 * 
+		 * 
+		 * WebElement help_click =
+		 * browsersetup.findElement(By.cssSelector("input[name = 'email']"));
+		 * help_click.click();
+		 * 
+		 * 
+		 * 
+		 * try { WebElement createclick = browsersetup.findElement(By.
+		 * xpath("a[contains, (text(), 'Create your amazon Account')]"));
+		 * createclick.click(); }
+		 * 
+		 * catch (InvalidSelectorException e) { // TODO: handle exception }
+		 * 
+		 * 
+		 * 
+		 * 
+		 * System.out.println("help_click");
+		 * 
+		 * 
+		 * //a[contains, (text(), 'Create')]
 		 */
-		
-	/*	WebElement help_click = browsersetup.findElement(By.cssSelector("input[name = 'email']"));
-		help_click.click();*/
-		
-		
-		
-		try {
-		WebElement createclick = browsersetup.findElement(By.xpath("a[contains, (text(), 'Create your amazon Account')]"));
-		createclick.click();
-		}
-		
-		catch (InvalidSelectorException e) {
-			// TODO: handle exception
-		}
-		
-		
-		
-		
-		System.out.println("help_click");
-		
-		
-		//a[contains, (text(), 'Create')]
-
 	}
 
 	public static void all_locators_cssselector() {

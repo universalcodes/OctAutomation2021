@@ -37,7 +37,9 @@ public class SeleniumBrowserSetup  {
 
 		//LocatorsMain.all_locators_name();
 		
-		LocatorsMain.all_locators_xpathcontains();
+		//LocatorsMain.all_locators_xpathcontains();
+		
+		DropDownSelectSelenium.dropdowntest();
 		
 	
 	}
