@@ -41,6 +41,8 @@ public class SeleniumBrowserSetup  {
 		
 		DropDownSelectSelenium.dropdowntest();
 		
+		//ActionsClass.actionCalls();
+		
 	
 	}
 	public static void firefoxsetup() throws InterruptedException

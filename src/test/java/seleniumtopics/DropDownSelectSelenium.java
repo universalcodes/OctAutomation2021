@@ -1,8 +1,13 @@
 package seleniumtopics;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -48,14 +53,31 @@ public class DropDownSelectSelenium extends SeleniumBrowserSetup{
 	System.out.println("South America is Selected");
 	
 	
-	dropdown_data.deselectAll();
+	/*
+	 * dropdown_data.deselectAll();
+	 * 
+	 * System.out.println("Deleselected values");
+	 */
 	
-	System.out.println("Deleselected values");
 	
+    
+    
+    String sspath = "D:\\OctAutomation\\Screenshot\\test.png";
+    
+    File screenshottaker = ((TakesScreenshot) browsersetup ).getScreenshotAs(OutputType.FILE);
+    
+    try
+    {
+    	FileUtils.copyFile(screenshottaker, new File(sspath));
+    	
+    }
+    
+    
+	catch (Exception e) {
+
+		System.out.println("Screenshot Taken");
 	
-	
-	
-	
+	}
 	}
 }
 	
